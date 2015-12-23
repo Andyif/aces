@@ -23,7 +23,7 @@ public class GetGold {
         webDriver.findElement(By.xpath("//*[@id='chatpanel']/ul/li[3]/a")).click();
         Thread.sleep(5000);
         System.out.println("check if closed");
-        System.out.println(webDriver.findElements(By.name("drawing_input_login")).size());
+        //System.out.println(webDriver.findElements(By.name("drawing_input_login")).size());
         if(webDriver.findElements(By.name("drawing_input_login")).size() == 0){
             System.out.println("closed");
             return true;
